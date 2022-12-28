@@ -19,12 +19,12 @@ jobs:
       - run:
           name: install Server dependencies
           command: |
-            npm backend:install
+            npm run backend:install
       - run:
           name: Run frontend build
           command: |
-            npm run frontend:install
+            npm run frontend:build
       - run:
           name: Run backend build
           command: |
-            npm backend:install
+            npm run backend:build
