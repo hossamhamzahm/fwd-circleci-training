@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@4.1.0
+  yarn: itinerisltd/yarn@2.1.1
   # different jobs are calles later in the workflows sections
 jobs:
   build:
@@ -21,6 +22,6 @@ jobs:
       - run:
           name: install Server dependencies & run build
           command: |
-            cd ../reactnd-contacts-server
+            cd reactnd-contacts-server
             npm install
             npm run build
