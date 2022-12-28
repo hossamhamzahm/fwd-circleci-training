@@ -21,6 +21,6 @@ jobs:
       - run:
           name: install Server dependencies & run build
           command: |
-            cd reactnd-contacts-server
+            cd ../reactnd-contacts-server
             npm install
             npm run build
