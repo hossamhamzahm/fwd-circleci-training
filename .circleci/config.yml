@@ -16,11 +16,11 @@ jobs:
           name: install UI dependencies & run build
           command: |
             cd reactnd-contacts-complete
-            npm run install
+            npm install
             npm run build
       - run:
           name: install Server dependencies & run build
           command: |
             cd reactnd-contacts-server
-            npm run install
+            npm install
             npm run build
